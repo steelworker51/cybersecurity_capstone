@@ -1,0 +1,8 @@
+Mar 05 08:00:01 gatekeeper sshd: Accepted password for boss_man from 192.168.1.2
+Mar 05 08:01:15 gatekeeper sshd: Failed password for root from 10.0.0.5
+Mar 05 08:01:16 gatekeeper sshd: Failed password for root from 10.0.0.5
+Mar 05 08:01:17 gatekeeper sshd: Failed password for root from 10.0.0.5
+Mar 05 08:05:00 gatekeeper sshd: Accepted password for dale_m from 192.168.1.15
+Mar 05 08:10:22 gatekeeper sudo: user dale_m : TTY=pts/0 ; PWD=/home/dale_m ; USER=root ; COMMAND=/usr/bin/ls
+Mar 05 08:12:00 gatekeeper sshd: Failed password for admin from 172.16.0.42
+Mar 05 08:15:45 gatekeeper sshd: Failed password for root from 10.0.0.5
