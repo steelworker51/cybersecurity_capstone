@@ -25,7 +25,6 @@ A Python-based tool that analyzes system authentication logs to detect suspiciou
 
 ## 📊 Sample Output
 SECURITY SUMMARY REPORT
-Total lines scanned: 100
 Unique IPs flagged: 3
 Boss Mode Threats Detected: 2
 
