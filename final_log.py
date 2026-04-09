@@ -1,10 +1,10 @@
 import csv  # Give the robot a pen 
 
 # 1. SETUP
-log_file_name = "auth.log"  # Tell the robot which file to look at [cite: 57, 414]
-ip_counts = {}              # Empty mailboxes for counting [cite: 202, 412]
-boss_mode_attempts = []     # List for 'sudo' or 'root' users [cite: 350, 415]
-total_lines = 0             # Tally for total lines scanned [cite: 351, 416]
+log_file_name = "auth.log"  # Tell the robot which file to look at 
+ip_counts = {}              # Empty mailboxes for counting 
+boss_mode_attempts = []     # List for 'sudo' or 'root' users 
+total_lines = 0             # Tally for total lines scanned 
 
 print("--- Robot Guard is generating the Final Report! ---") 
 
@@ -19,13 +19,13 @@ try:
 
             # CHECK 1: Failed password attempts
             if "Failed" in clean_line: 
-                # Finds the IP at the end of the line [cite: 230, 361]
+                # Finds the IP at the end of the line 
                 ip_address = clean_line.split()[-1]
                 
-                # Update the mailbox/dictionary [cite: 231, 362]
+                # Update the mailbox/dictionary 
                 ip_counts[ip_address] = ip_counts.get(ip_address, 0) + 1
             
-            # CHECK 2: Boss Mode (Sudo or Root) [cite: 256, 363]
+            # CHECK 2: Boss Mode (Sudo or Root) 
             if "sudo" in clean_line or "root" in clean_line: 
                 boss_mode_attempts.append(clean_line) 
 
